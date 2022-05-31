@@ -24,6 +24,9 @@ namespace UmbracoTraining.Controllers
         [ValidateUmbracoFormRouteString]
         public ActionResult Submit(ArticleModel model)
         {
+
+            
+
             var contentService = Services.ContentService;
 
             var mediaService = Services.MediaService;

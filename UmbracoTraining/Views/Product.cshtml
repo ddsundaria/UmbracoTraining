@@ -1,5 +1,10 @@
-﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.Product>
-@using ContentModels = Umbraco.Web.PublishedModels;
-@{
-	Layout = "Masterpage.cshtml";
-}
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<UmbracoTraining.Models.ProductContentModel>
+    @using ContentModels = Umbraco.Web.PublishedModels;
+    @{
+    Layout = "Masterpage.cshtml";
+    }
+
+    <H2>
+        @Model.Content.Value("productName")
+    </H2>
+    <span>Price: @Model.GSTPrice</span>

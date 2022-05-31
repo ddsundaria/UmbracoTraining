@@ -15,7 +15,7 @@
                 </div>
                 @{
                 var root = Model.AncestorOrSelf(1);
-                
+                //var root = Umbraco.ContentAtRoot();
                 <div class="col-md-6 text-center text-lg-right">
                     <div class="d-inline-flex align-items-center">
                         <a class="text-white px-3" href="@root.Value("facebook")">
@@ -51,7 +51,6 @@
                     <div class="navbar-nav ml-auto py-0">
                         @{
                         var rootItem = Model.AncestorOrSelf(1);
-                        
                         <a href="@rootItem.Url" class="nav-item nav-link active">@rootItem.Name</a>
                         foreach(var child in rootItem.Children()){
                             <a href="@child.Url" class="nav-item nav-link">@child.Name</a>
