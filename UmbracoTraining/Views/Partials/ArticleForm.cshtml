@@ -1,0 +1,44 @@
+﻿@model UmbracoTraining.Models.ArticleModel
+
+@using (Html.BeginUmbracoForm("Submit", "ArticleForm"))
+{
+    <h2>The Article</h2>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Name)
+        @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Summary)
+        @Html.TextAreaFor(m => m.Summary, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.FeaturedImage)
+        <input type="file" name="FeaturedImage" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.ArticleContent)
+        @Html.TextAreaFor(m => m.ArticleContent, new { @class = "form-control", rows = "10" })
+    </div>
+
+    <br />
+    <br />
+
+    <h2>About the author</h2>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.AuthorName)
+        @Html.TextBoxFor(m => m.AuthorName, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.AuthorTitle)
+        @Html.TextBoxFor(m => m.AuthorTitle, new { @class = "form-control" })
+    </div>
+
+    <input type="submit" value="Submit" />
+}
+

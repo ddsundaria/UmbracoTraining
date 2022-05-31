@@ -1,0 +1,13 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.Form>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = "Masterpage.cshtml";
+}
+
+<div class="container">
+    <div class="row section">
+        <div class="col-md-12">
+            @Html.Action("Render", "ArticleForm")
+        </div>
+    </div>
+</div>
