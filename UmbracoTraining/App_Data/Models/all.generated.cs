@@ -6,8 +6,8 @@ using  Umbraco.Core.Models;
 using  Umbraco.Core.Models.PublishedContent;
 using  Umbraco.Web;
 using  Umbraco.ModelsBuilder.Embedded;
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "172677e203f37b42")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "a3d3a2364b9977d0")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.2")]
 
 
 // FILE: models.generated.cs
@@ -90,6 +90,13 @@ namespace Umbraco.Web.PublishedModels
 		public virtual string Facebook => this.Value<string>("facebook");
 
 		///<summary>
+		/// Google Analytics Tracking Id
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("googleAnalyticsTrackingId")]
+		public virtual string GoogleAnalyticsTrackingId => this.Value<string>("googleAnalyticsTrackingId");
+
+		///<summary>
 		/// LinkedIn
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
@@ -156,6 +163,13 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
 		[ImplementPropertyType("pageBody")]
 		public virtual global::Newtonsoft.Json.Linq.JToken PageBody => this.Value<global::Newtonsoft.Json.Linq.JToken>("pageBody");
+
+		///<summary>
+		/// RichText
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("richText")]
+		public virtual global::System.Web.IHtmlString RichText => this.Value<global::System.Web.IHtmlString>("richText");
 	}
 
 	/// <summary>Product</summary>

@@ -1,0 +1,20 @@
+{
+  "id": "69447d17-0b04-4fac-82c7-a0ed685aed25",
+  "name": "Send template email to ddsundaria@gmail.com",
+  "form": "f41813a1-e5cf-422e-9906-b2d32b26788e",
+  "active": true,
+  "includeSensitiveData": "False",
+  "workflowTypeId": "17c61629-d984-4e86-b43b-a8407b3efea9",
+  "executesOn": "Submitted",
+  "settings": {
+    "RazorViewFilePath": "Forms/Emails/Example-Template.cshtml",
+    "Attachment": "",
+    "Email": "ddsundaria@gmail.com",
+    "CcEmail": "",
+    "BccEmail": "",
+    "SenderEmail": "",
+    "ReplyToEmail": "",
+    "Subject": "The Form '{form_name}' was submitted"
+  },
+  "sortOrder": 1
+}

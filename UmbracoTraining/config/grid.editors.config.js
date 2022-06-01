@@ -46,5 +46,16 @@
             "style": "border-left: 3px solid #ccc; padding: 10px; color: #ccc; font-family: serif; font-style: italic; font-size: 18px",
             "markup": "<blockquote>#value#</blockquote>"
         }
+    },
+    {
+        "name": "SubHeadline",
+        "nameTemplate": "{{ value }}",
+        "alias": "subheadline",
+        "view": "textstring",
+        "icon": "icon-coin",
+        "config": {
+            "style": "font-size: 24px; line-height: 36px; font-weight: bold",
+            "markup": "<h2>#value#</h2>"
+        }
     }
 ]
