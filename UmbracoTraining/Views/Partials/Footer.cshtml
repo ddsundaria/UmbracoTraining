@@ -32,7 +32,7 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <p class="m-0">@root.Value("copyrightText")
+                    <p class="m-0">@root.Value("copyrightText", "en-Us", fallback: Fallback.ToLanguage)
                     </p>
                 </div>
             </div>

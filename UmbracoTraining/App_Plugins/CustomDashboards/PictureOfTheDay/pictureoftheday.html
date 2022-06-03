@@ -1,0 +1,18 @@
+﻿<div class="pictureoftheday" ng-controller="PictureOfTheDayController as vm">
+  <umb-box>
+    <umb-box-header title="{{vm.title}}"></umb-box-header>
+    <umb-box-content>
+      <div ng-if="vm.pictureOfTheDay && vm.pictureOfTheDay.media_type=='image'">
+        <figure>
+          <figcaption>{{vm.pictureOfTheDay.explanation}}</figcaption>
+
+          <img src="{{vm.pictureOfTheDay.hdurl}}" alt="{{vm.pictureOfTheDay.title}}" />
+
+        </figure>
+      </div>
+      <div ng-if="vm.pictureOfTheDay && vm.pictureOfTheDay.media_type=='video'">
+        <iframe width="640" height="385" ng-src="{{vm.trustSrc(vm.pictureOfTheDay.url)}}" frameborder="0"></iframe>
+      </div>
+    </umb-box-content>
+  </umb-box>
+</div>
